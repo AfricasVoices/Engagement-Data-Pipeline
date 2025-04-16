@@ -333,13 +333,18 @@ def sync_rapid_pro_to_engagement_db(rapid_pro, engagement_db, uuid_table, rapid_
                               f"at {rapid_pro_result.time}")
                     sync_stats.add_event(RapidProSyncEvents.RESULT_TIME_OUT_OF_RANGE)
                 else:
+                    if run.contact.urn.startswith("whatsapp:"):
+                        channel_operator = "whatsapp"
+                    else:
+                        channel_operator=URNCleaner.clean_operator(contact_urn)
+                        
                     # Create a message and origin objects for this result and ensure it's in the engagement database.
                     msg = Message(
                         participant_uuid=participant_uuid,
                         text=rapid_pro_result.value,  # Raw text received from a participant
                         timestamp=rapid_pro_result.time,  # Time at which Rapid Pro processed this message in the flow.
                         direction=MessageDirections.IN,
-                        channel_operator=URNCleaner.clean_operator(contact_urn),
+                        channel_operator=channel_operator,
                         status=MessageStatuses.LIVE,
                         dataset=config.engagement_db_dataset,
                         labels=[],
