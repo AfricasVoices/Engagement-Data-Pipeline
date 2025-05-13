@@ -359,11 +359,7 @@ def sync_rapid_pro_to_engagement_db(rapid_pro, engagement_db, uuid_table, rapid_
                               f"at {rapid_pro_result.time}")
                     sync_stats.add_event(RapidProSyncEvents.RESULT_TIME_OUT_OF_RANGE)
                 else:
-                    if run.contact.urn.startswith("whatsapp:"):
-                        channel_operator = "whatsapp"
-                    else:
-                        channel_operator = URNCleaner.clean_operator(contact_urn)
-                        
+                    channel_operator = URNCleaner.clean_operator(contact_urn)                        
                     # Create a message and origin objects for this result and ensure it's in the engagement database.
                     msg = Message(
                         participant_uuid=participant_uuid,
