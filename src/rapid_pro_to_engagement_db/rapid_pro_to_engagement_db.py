@@ -308,6 +308,18 @@ def sync_rapid_pro_to_engagement_db(rapid_pro, engagement_db, uuid_table, rapid_
                     cache.set_latest_run_timestamp(flow_id, run.modified_on)
                 continue
             contact = contacts_lut[run.contact.uuid]
+
+            # Check if the contact has any URNs
+            if not contact.urns:
+                log.warning(f"Contact with UUID {contact.uuid} has no URNs; skipping.")
+                # TODO: Consider adding a specific event for contacts with no URNs in the future.
+                # Example:
+                # flow_stats.add_event(RapidProSyncEvents.CONTACT_HAS_NO_URNS)
+                # Ensure `RapidProSyncEvents` includes a `CONTACT_HAS_NO_URNS` event.
+                if not dry_run and cache is not None:
+                    cache.set_latest_run_timestamp(flow_id, run.modified_on)
+                continue
+            
             contact_urn = _normalise_and_validate_contact_urns(contact.urns)
 
             if rapid_pro_config.uuid_filter is not None:
