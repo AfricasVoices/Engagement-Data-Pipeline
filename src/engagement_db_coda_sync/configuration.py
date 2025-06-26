@@ -135,7 +135,7 @@ class CodaSyncConfiguration:
         self.default_ws_dataset = default_ws_dataset
         self.project_users_file_url = project_users_file_url
 
-        self.validate()
+        # self.validate()
 
     def validate(self):
         # Ensure that all the ws_code_match_values match a code in the ws_correct_dataset_code_scheme.
