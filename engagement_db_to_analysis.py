@@ -14,6 +14,8 @@ if __name__ == "__main__":
                         help="Logs the updates that would be made without updating anything.")
     parser.add_argument("--incremental-cache-path",
                         help="Path to a directory to use to cache results needed for incremental operation.")
+    parser.add_argument("--export-large-files", action="store_true",
+                        help="If set, will export/upload potential large files. Otherwise, only necessary files will be exported/uploaded.")
 
     parser.add_argument("user", help="Identifier of the user launching this program")
     parser.add_argument("google_cloud_credentials_file_path", metavar="google-cloud-credentials-file-path",
@@ -32,6 +34,7 @@ if __name__ == "__main__":
 
     dry_run = args.dry_run
     incremental_cache_path = args.incremental_cache_path
+    export_large_files = args.export_large_files
 
     user = args.user
     google_cloud_credentials_file_path = args.google_cloud_credentials_file_path
@@ -57,4 +60,4 @@ if __name__ == "__main__":
         exit(0)
 
     generate_analysis_files(user, google_cloud_credentials_file_path, pipeline_config, uuid_table, engagement_db, rapid_pro,
-                            membership_group_dir_path, output_dir, incremental_cache_path, dry_run)
+                            membership_group_dir_path, output_dir, incremental_cache_path, dry_run, export_large_files)

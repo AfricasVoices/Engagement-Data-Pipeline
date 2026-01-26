@@ -52,7 +52,7 @@ def export_traced_data(traced_data, export_path):
 
 
 def generate_analysis_files(user, google_cloud_credentials_file_path, pipeline_config, uuid_table, engagement_db, rapid_pro,
-                            membership_group_dir_path,output_dir, cache_path=None, dry_run=False):
+                            membership_group_dir_path,output_dir, cache_path=None, dry_run=False, export_large_files=False):
     """
     :type pipeline_config: src.pipeline_configuration_spec.PipelineConfiguration
     """
@@ -107,10 +107,11 @@ def generate_analysis_files(user, google_cloud_credentials_file_path, pipeline_c
     export_analysis_file(messages_by_column, pipeline_config, f"{output_dir}/messages.csv", export_timestamps=True)
     export_analysis_file(participants_by_column, pipeline_config, f"{output_dir}/participants.csv")
 
-    export_traced_data(messages_by_column, f"{output_dir}/messages.jsonl")
-    export_traced_data(participants_by_column, f"{output_dir}/participants.jsonl")
+    if export_large_files:
+        export_traced_data(messages_by_column, f"{output_dir}/messages.jsonl")
+        export_traced_data(participants_by_column, f"{output_dir}/participants.jsonl")
 
-    run_automated_analysis(messages_by_column, participants_by_column, pipeline_config.analysis, f"{output_dir}/automated-analysis")
+    run_automated_analysis(messages_by_column, participants_by_column, pipeline_config.analysis, f"{output_dir}/automated-analysis", export_large_files=export_large_files)
 
     dry_run_text = "(dry run)" if dry_run else ""
     if pipeline_config.analysis.google_drive_upload is None:
@@ -127,8 +128,9 @@ def generate_analysis_files(user, google_cloud_credentials_file_path, pipeline_c
 
             drive_dir = pipeline_config.analysis.google_drive_upload.drive_dir
             google_drive_upload.upload_file(f"{output_dir}/production.csv", drive_dir)
-            google_drive_upload.upload_file(f"{output_dir}/messages.csv", drive_dir)
-            google_drive_upload.upload_file(f"{output_dir}/participants.csv", drive_dir)
+            if export_large_files:
+                google_drive_upload.upload_file(f"{output_dir}/messages.csv", drive_dir)
+                google_drive_upload.upload_file(f"{output_dir}/participants.csv", drive_dir)
             google_drive_upload.upload_all_files_in_dir(
                 f"{output_dir}/automated-analysis", f"{drive_dir}/automated-analysis", recursive=True
             )

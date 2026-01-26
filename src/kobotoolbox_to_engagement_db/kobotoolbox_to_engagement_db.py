@@ -246,9 +246,13 @@ def _sync_kobotoolbox_to_engagement_db(google_cloud_credentials_file_path, kobot
                 continue
             sync_stats.add_event(KoboToolBoxSyncEvents.READ_ANSWER_FROM_RESPONSE)
 
-            participant_uuid = _get_participant_uuid_for_response(form_response, kobotoolbox_source.sync_config.participant_id_configuration.id_type, 
-                                                                  kobotoolbox_source.sync_config.participant_id_configuration.data_column_name, 
-                                                                  uuid_table, kobotoolbox_source.sync_config)
+            participant_id_type, participant_id_question_id = None, None
+            if kobotoolbox_source.sync_config.participant_id_configuration is not None:
+                participant_id_type = kobotoolbox_source.sync_config.participant_id_configuration.id_type
+                participant_id_question_id = kobotoolbox_source.sync_config.participant_id_configuration.data_column_name
+            participant_uuid = _get_participant_uuid_for_response(
+                form_response, participant_id_type, participant_id_question_id, uuid_table, kobotoolbox_source.sync_config
+            )
 
             engagement_db_message = _form_answer_to_engagement_db_message(form_answer, kobotoolbox_source.sync_config.asset_uid, form_response, participant_uuid,
                                           question_config.engagement_db_dataset, question_config.data_column_name)
