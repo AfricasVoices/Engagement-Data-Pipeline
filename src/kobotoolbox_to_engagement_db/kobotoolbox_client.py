@@ -8,6 +8,7 @@ from core_data_modules.logging import Logger
 log = Logger(__name__)
 
 BASE_URL = "https://eu.kobotoolbox.org/api/v2/assets"
+PAGE_SIZE = 1000  # Maximum allowed per page as of January 2026
 
 
 class KoboToolBoxClient:
@@ -34,9 +35,12 @@ class KoboToolBoxClient:
 
     def get_form_responses(authorization_headers, asset_uid, submitted_after_exclusive=None):
         """
-        Retrieves the responses for a specified kobotoolbox form.
+        Retrieves all responses for a specified KoboToolBox form, handling pagination automatically.
 
-        :param authorization_headers: A dictionary of authorization headers for the API call.
+        Iterates through all pages of results by following the `next` link returned in each API
+        response, using a page size of up to 1,000 records (the maximum allowed as of January 2026).
+
+        :param authorization_headers: A dictionary of authorization headers for the API call 
         :type authorization_headers: dict
         :param asset_uid: The UID of the form for which responses are to be retrieved.
         :type asset_uid: str
@@ -66,22 +70,43 @@ class KoboToolBoxClient:
             50
         """
         timestamp_log = ""
+        query_param = ""
+
         if submitted_after_exclusive is not None:
             submitted_after_exclusive = submitted_after_exclusive.isoformat()
             timestamp_log = f", last submitted after {submitted_after_exclusive}"
-            query = f'{{"_submission_time":{{"$gt":"{submitted_after_exclusive}"}}}}'
-            log.info(f"Downloading responses for Asset '{asset_uid}'{timestamp_log}")
-            request = f'{BASE_URL}/{asset_uid}/data/?query={query}&format=json'
-        else:
-            log.info(f"Downloading all responses for Asset '{asset_uid}")
-            request = f'{BASE_URL}/{asset_uid}/data/?format=json'
+            query_param = f'&query={{"_submission_time":{{"$gt":"{submitted_after_exclusive}"}}}}'
 
-        response = requests.get(request, headers=authorization_headers, verify=False)
-        if response.content:
-            form_responses = json.loads(response.content)['results']
-            log.info(f"Downloaded {len(form_responses)} total responses")
-        else: 
-            log.info(f"No responses downloaded for Asset '{asset_uid}'{timestamp_log}. Status code: {response.status_code}")
-            form_responses = []
+        log.info(f"Downloading responses for Asset '{asset_uid}'{timestamp_log}")
 
-        return form_responses
+        # Build the initial paginated request
+        next_url = f"{BASE_URL}/{asset_uid}/data/?format=json&limit={PAGE_SIZE}&start=0{query_param}"
+
+        all_responses = []
+        page_num = 1
+
+        while next_url:
+            log.info(f"Fetching page {page_num} from: {next_url}")
+            response = requests.get(next_url, headers=authorization_headers, verify=False)
+
+            if not response.content:
+                log.warning(
+                    f"Empty response on page {page_num} for Asset '{asset_uid}'{timestamp_log}. "
+                    f"Status code: {response.status_code}"
+                )
+                break
+
+            response.raise_for_status()
+            response_data = json.loads(response.content)
+            page_results = response_data.get("results", [])
+            all_responses.extend(page_results)
+
+            log.info(f"Page {page_num}: fetched {len(page_results)} responses "
+                     f"(running total: {len(all_responses)})")
+
+            # Follow the `next` link if present, otherwise stop
+            next_url = response_data.get("next")
+            page_num += 1
+
+        log.info(f"Downloaded {len(all_responses)} total responses for Asset '{asset_uid}'{timestamp_log}")
+        return all_responses
