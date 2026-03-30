@@ -7,7 +7,7 @@ from core_data_modules.logging import Logger
 
 log = Logger(__name__)
 
-BASE_URL = "https://eu.kobotoolbox.org/api/v2/assets/"
+BASE_URL = "https://eu.kobotoolbox.org/api/v2/assets"
 
 
 class KoboToolBoxClient:
