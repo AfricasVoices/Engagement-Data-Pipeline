@@ -1,0 +1,382 @@
+{
+    "SchemeID": "Scheme-607846da",
+    "Name": "SDC GAU S01E04",
+    "Version": "0.0.0.1",
+    "Codes": [
+        {
+            "CodeID": "code-2715d425",
+            "DisplayText": "peace tournaments",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "peace_tournaments",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b189c9fa",
+            "DisplayText": "security forces deployed",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "security_forces_deployed",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ba878a8c",
+            "DisplayText": "peace initiatives",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "peace_initiatives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-db10d181",
+            "DisplayText": "cultural conflict resolution",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "cultural_conflict_resolution",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-328b90b4",
+            "DisplayText": "penalizing criminals",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "penalizing_criminals",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-730f6650",
+            "DisplayText": "community development and economic opportunities",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "community_development_and_economic_opportunities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-99663da3",
+            "DisplayText": "disarmament",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "disarmament",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a7036a61",
+            "DisplayText": "NGOs programs",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "ngo_programs",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-cb06009c",
+            "DisplayText": "peace committees",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "peace_committees",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fb011375",
+            "DisplayText": "de-radicalisation initiatives",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "de_radicalisation_initiatives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-bdfe6882",
+            "DisplayText": "dialogue and mediation",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "dialogue_and_mediation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a5880022",
+            "DisplayText": "reporting to authorities",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "reporting_to_authorities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-63d6af42",
+            "DisplayText": "intermarriage",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "intermarriage",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-05485dd7",
+            "DisplayText": "collaboration and stakeholder engagement",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "collaboration_and_stakeholder_engagement",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6fafab8f",
+            "DisplayText": "cultural initiatives",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "cultural_initiatives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f9495ae7",
+            "DisplayText": "law enforcement",
+            "CodeType": "Normal",
+            "NumericValue": 17,
+            "StringValue": "law_enforcement",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2e6d9954",
+            "DisplayText": "collaboration between stakeholders",
+            "CodeType": "Normal",
+            "NumericValue": 18,
+            "StringValue": "collaboration_between_stakeholders",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-215aee3b",
+            "DisplayText": "conflict monitoring",
+            "CodeType": "Normal",
+            "NumericValue": 19,
+            "StringValue": "conflict_monitoring",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c29a0b1e",
+            "DisplayText": "water infrastructure construction",
+            "CodeType": "Normal",
+            "NumericValue": 20,
+            "StringValue": "water_infrastructure_construction",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1877d844",
+            "DisplayText": "cross-border peace initiatives",
+            "CodeType": "Normal",
+            "NumericValue": 21,
+            "StringValue": "cross_border_peace_initiatives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4a11fec8",
+            "DisplayText": "not aware of any",
+            "CodeType": "Normal",
+            "NumericValue": 22,
+            "StringValue": "not_aware_of_any",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3f3564d9",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 23,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-E-720cdb66",
+            "CodeType": "Meta",
+            "MetaCode": "escalate",
+            "DisplayText": "meta: ESCALATE",
+            "NumericValue": -100080,
+            "StringValue": "escalate",
+            "VisibleInCoda": true,
+            "Shortcut": "e"
+        },
+        {
+            "CodeID": "code-NA-f93d3eb7",
+            "CodeType": "Control",
+            "ControlCode": "NA",
+            "DisplayText": "NA (missing)",
+            "NumericValue": -10,
+            "StringValue": "NA",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-NS-2c11b7c9",
+            "CodeType": "Control",
+            "ControlCode": "NS",
+            "DisplayText": "NS (skip)",
+            "NumericValue": -20,
+            "StringValue": "NS",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-NC-42f1d983",
+            "CodeType": "Control",
+            "ControlCode": "NC",
+            "DisplayText": "NC (not coded)",
+            "NumericValue": -30,
+            "StringValue": "NC",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-NR-5e3eee23",
+            "CodeType": "Control",
+            "ControlCode": "NR",
+            "DisplayText": "NR (not reviewed)",
+            "NumericValue": -40,
+            "StringValue": "NR",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-NIC-99631cb8",
+            "CodeType": "Control",
+            "ControlCode": "NIC",
+            "DisplayText": "NIC (not internally consistent)",
+            "NumericValue": -50,
+            "StringValue": "NIC",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-NOC-4eb70633",
+            "ControlCode": "NOC",
+            "StringValue": "NOC",
+            "DisplayText": "Noise (Other Channel)",
+            "VisibleInCoda": true,
+            "NumericValue": -60,
+            "CodeType": "Control"
+        },
+        {
+            "CodeID": "code-STOP-08b832a8",
+            "CodeType": "Control",
+            "ControlCode": "STOP",
+            "DisplayText": "STOP",
+            "NumericValue": -90,
+            "StringValue": "STOP",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-WS-adb25603b7af",
+            "CodeType": "Control",
+            "ControlCode": "WS",
+            "DisplayText": "WS (wrong scheme)",
+            "NumericValue": -100,
+            "StringValue": "WS",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-CE-016c1e22",
+            "CodeType": "Control",
+            "ControlCode": "CE",
+            "DisplayText": "CE (coding error)",
+            "NumericValue": -110,
+            "StringValue": "CE",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-PB-a434a800",
+            "CodeType": "Meta",
+            "MetaCode": "push_back",
+            "DisplayText": "meta: push back",
+            "NumericValue": -100000,
+            "StringValue": "push_back",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-SQ-5e8f0122",
+            "CodeType": "Meta",
+            "MetaCode": "showtime_question",
+            "DisplayText": "meta: showtime question",
+            "NumericValue": -100030,
+            "StringValue": "showtime_question",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-Q-a5d3700d",
+            "CodeType": "Meta",
+            "MetaCode": "question",
+            "DisplayText": "meta: question",
+            "NumericValue": -100010,
+            "StringValue": "question",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-G-97cb3199",
+            "CodeType": "Meta",
+            "MetaCode": "greeting",
+            "DisplayText": "meta: greeting",
+            "NumericValue": -100020,
+            "StringValue": "greeting",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-OI-c5f1d054",
+            "CodeType": "Meta",
+            "MetaCode": "opt-in",
+            "DisplayText": "meta: opt-in",
+            "NumericValue": -100040,
+            "StringValue": "opt_in",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-SC-a3a065bc",
+            "CodeType": "Meta",
+            "MetaCode": "similar_content",
+            "DisplayText": "meta: similar content",
+            "NumericValue": -100050,
+            "StringValue": "similar_content",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-PI-83b90d32",
+            "CodeType": "Meta",
+            "MetaCode": "participation_incentive",
+            "DisplayText": "meta: participation incentive",
+            "NumericValue": -100060,
+            "StringValue": "participation_incentive",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-EC-3a704f5b",
+            "CodeType": "Meta",
+            "MetaCode": "exclusion_complaint",
+            "DisplayText": "meta: exclusion complaint",
+            "NumericValue": -100070,
+            "StringValue": "exclusion_complaint",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-GR-e6de1b7e",
+            "CodeType": "Meta",
+            "MetaCode": "gratitude",
+            "DisplayText": "meta: gratitude",
+            "NumericValue": -100100,
+            "StringValue": "gratitude",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-AC-9ed22631",
+            "CodeType": "Meta",
+            "MetaCode": "about_conversation",
+            "DisplayText": "meta: about conversation",
+            "NumericValue": -100120,
+            "StringValue": "about_conversation",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-CR-8e99616b",
+            "CodeType": "Meta",
+            "MetaCode": "chasing_reply",
+            "DisplayText": "meta: chasing reply",
+            "NumericValue": -100130,
+            "StringValue": "chasing_reply",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-I-b13a41f6",
+            "CodeType": "Meta",
+            "MetaCode": "impact",
+            "DisplayText": "meta: impact",
+            "StringValue": "impact",
+            "NumericValue": -100140,
+            "VisibleInCoda": false
+        }
+    ]
+}

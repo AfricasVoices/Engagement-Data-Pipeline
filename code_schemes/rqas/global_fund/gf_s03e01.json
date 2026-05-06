@@ -1,0 +1,390 @@
+{
+    "SchemeID": "Scheme-065add61",
+    "Name": "Global Fund S03E01",
+    "Version": "0.0.0.1",
+    "Codes": [
+        {
+            "CodeID": "code-35e29d7f",
+            "DisplayText": "food sharing",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "food_sharing",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-dce51c97",
+            "DisplayText": "providing support",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "providing_support",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-33a7b624",
+            "DisplayText": "gift giving",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "gift_giving",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3a0bf30e",
+            "DisplayText": "traditional skills",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "traditional_skills",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c1bf5fff",
+            "DisplayText": "support for the bereaved",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "support_for_the_bereaved",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-15d70483",
+            "DisplayText": "communal labor",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "communal_labor",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6c7db3e7",
+            "DisplayText": "providing alerts",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "providing_alerts",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a99974c0",
+            "DisplayText": "resource sharing",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "resource_sharing",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9d7f0a0c",
+            "DisplayText": "safegaurding",
+            "CodeType": "Normal",
+            "NumericValue": 16,
+            "StringValue": "safegaurding",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-bcc4f0d6",
+            "DisplayText": "helping new mothers",
+            "CodeType": "Normal",
+            "NumericValue": 17,
+            "StringValue": "helping_new_mothers",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ab7e921a",
+            "DisplayText": "dowry payment",
+            "CodeType": "Normal",
+            "NumericValue": 18,
+            "StringValue": "dowry_payment",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a857d31b",
+            "DisplayText": "polygammy",
+            "CodeType": "Normal",
+            "NumericValue": 19,
+            "StringValue": "polygammy",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2f85dcdf",
+            "DisplayText": "traditional offerings",
+            "CodeType": "Normal",
+            "NumericValue": 20,
+            "StringValue": "traditional_offerings",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ae12a23e",
+            "DisplayText": "trade",
+            "CodeType": "Normal",
+            "NumericValue": 21,
+            "StringValue": "trade",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-16f5510f",
+            "DisplayText": "cultural presavation",
+            "CodeType": "Normal",
+            "NumericValue": 22,
+            "StringValue": "cultural_presavation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ea3cfec4",
+            "DisplayText": "clan systems",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "clan_systems",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-daef174f",
+            "DisplayText": "giving counsel",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "giving_counsel",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-631bf384",
+            "DisplayText": "shared child care",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "shared_child_care",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9c73a560",
+            "DisplayText": "community collaboration",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "community_collaboration",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8c8e98b4",
+            "DisplayText": "story telling",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "story_telling",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3f203679",
+            "DisplayText": "traditional farming practices",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "traditional_farming_practices",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-39c074fe",
+            "DisplayText": "dowry support",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "dowry_support",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0614b082",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": -11,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-E-720cdb66",
+            "CodeType": "Meta",
+            "MetaCode": "escalate",
+            "DisplayText": "meta: ESCALATE",
+            "NumericValue": -100080,
+            "StringValue": "escalate",
+            "VisibleInCoda": true,
+            "Shortcut": "e"
+        },
+        {
+            "CodeID": "code-NA-f93d3eb7",
+            "CodeType": "Control",
+            "ControlCode": "NA",
+            "DisplayText": "NA (missing)",
+            "NumericValue": -10,
+            "StringValue": "NA",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-NS-2c11b7c9",
+            "CodeType": "Control",
+            "ControlCode": "NS",
+            "DisplayText": "NS (skip)",
+            "NumericValue": -20,
+            "StringValue": "NS",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-NC-42f1d983",
+            "CodeType": "Control",
+            "ControlCode": "NC",
+            "DisplayText": "NC (not coded)",
+            "NumericValue": -30,
+            "StringValue": "NC",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-NR-5e3eee23",
+            "CodeType": "Control",
+            "ControlCode": "NR",
+            "DisplayText": "NR (not reviewed)",
+            "NumericValue": -40,
+            "StringValue": "NR",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-NIC-99631cb8",
+            "CodeType": "Control",
+            "ControlCode": "NIC",
+            "DisplayText": "NIC (not internally consistent)",
+            "NumericValue": -50,
+            "StringValue": "NIC",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-NOC-4eb70633",
+            "ControlCode": "NOC",
+            "StringValue": "NOC",
+            "DisplayText": "Noise (Other Channel)",
+            "VisibleInCoda": true,
+            "NumericValue": -60,
+            "CodeType": "Control"
+        },
+        {
+            "CodeID": "code-STOP-08b832a8",
+            "CodeType": "Control",
+            "ControlCode": "STOP",
+            "DisplayText": "STOP",
+            "NumericValue": -90,
+            "StringValue": "STOP",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-WS-adb25603b7af",
+            "CodeType": "Control",
+            "ControlCode": "WS",
+            "DisplayText": "WS (wrong scheme)",
+            "NumericValue": -100,
+            "StringValue": "WS",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-CE-016c1e22",
+            "CodeType": "Control",
+            "ControlCode": "CE",
+            "DisplayText": "CE (coding error)",
+            "NumericValue": -110,
+            "StringValue": "CE",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-PB-a434a800",
+            "CodeType": "Meta",
+            "MetaCode": "push_back",
+            "DisplayText": "meta: push back",
+            "NumericValue": -100000,
+            "StringValue": "push_back",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-SQ-5e8f0122",
+            "CodeType": "Meta",
+            "MetaCode": "showtime_question",
+            "DisplayText": "meta: showtime question",
+            "NumericValue": -100030,
+            "StringValue": "showtime_question",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-Q-a5d3700d",
+            "CodeType": "Meta",
+            "MetaCode": "question",
+            "DisplayText": "meta: question",
+            "NumericValue": -100010,
+            "StringValue": "question",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-G-97cb3199",
+            "CodeType": "Meta",
+            "MetaCode": "greeting",
+            "DisplayText": "meta: greeting",
+            "NumericValue": -100020,
+            "StringValue": "greeting",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-OI-c5f1d054",
+            "CodeType": "Meta",
+            "MetaCode": "opt-in",
+            "DisplayText": "meta: opt-in",
+            "NumericValue": -100040,
+            "StringValue": "opt_in",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-SC-a3a065bc",
+            "CodeType": "Meta",
+            "MetaCode": "similar_content",
+            "DisplayText": "meta: similar content",
+            "NumericValue": -100050,
+            "StringValue": "similar_content",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-PI-83b90d32",
+            "CodeType": "Meta",
+            "MetaCode": "participation_incentive",
+            "DisplayText": "meta: participation incentive",
+            "NumericValue": -100060,
+            "StringValue": "participation_incentive",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-EC-3a704f5b",
+            "CodeType": "Meta",
+            "MetaCode": "exclusion_complaint",
+            "DisplayText": "meta: exclusion complaint",
+            "NumericValue": -100070,
+            "StringValue": "exclusion_complaint",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-GR-e6de1b7e",
+            "CodeType": "Meta",
+            "MetaCode": "gratitude",
+            "DisplayText": "meta: gratitude",
+            "NumericValue": -100100,
+            "StringValue": "gratitude",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-AC-9ed22631",
+            "CodeType": "Meta",
+            "MetaCode": "about_conversation",
+            "DisplayText": "meta: about conversation",
+            "NumericValue": -100120,
+            "StringValue": "about_conversation",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-CR-8e99616b",
+            "CodeType": "Meta",
+            "MetaCode": "chasing_reply",
+            "DisplayText": "meta: chasing reply",
+            "NumericValue": -100130,
+            "StringValue": "chasing_reply",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-I-b13a41f6",
+            "CodeType": "Meta",
+            "MetaCode": "impact",
+            "DisplayText": "meta: impact",
+            "StringValue": "impact",
+            "NumericValue": -100140,
+            "VisibleInCoda": false
+        }
+    ]
+}
